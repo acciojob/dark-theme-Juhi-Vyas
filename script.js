@@ -4,10 +4,8 @@ let btn = document.getElementById("swap")
 
 
 function swapTheme() {
-	app.className.remove = "day"
-	app.className = "night"
-	btn.className.remove = "button_day"
-	btn.className = "button_night"
+	app.classList.toggle("night");
+    btn.classList.toggle("button_night")
 }
 
 btn.addEventListener("click", swapTheme)
